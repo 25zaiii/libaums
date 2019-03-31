@@ -180,12 +180,12 @@ public class ScsiBlockDevice implements BlockDeviceDriver {
 		cswBuffer.clear();
 
 		csw.read(cswBuffer);
-		if (csw.getbCswStatus() != CommandStatusWrapper.COMMAND_PASSED) {
-			throw new IOException("Unsuccessful Csw status: " + csw.getbCswStatus());
+		if (csw.getbCswStatus() != CommandStatusWrapper.COMMAND_PASSED) {/*
+			throw new IOException("Unsuccessful Csw status: " + csw.getbCswStatus());*/
 		}
 
-		if (csw.getdCswTag() != command.getdCbwTag()) {
-			throw new IOException("wrong csw tag!");
+		if (csw.getdCswTag() != command.getdCbwTag()) {/*
+			throw new IOException("wrong csw tag!");*/
 		}
 
 		return /*csw.getbCswStatus() == CommandStatusWrapper.COMMAND_PASSED*/true;
