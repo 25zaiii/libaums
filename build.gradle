@@ -29,7 +29,7 @@ buildscript {
 ext {
     bintrayRepo = 'maven'
 
-    publishedGroupId = 'com.github.25zaiii'
+    publishedGroupId = 'com.github.mjdev'
     libraryName = 'libaums'
 
     // artifact comes from module as well as libraryVersion
