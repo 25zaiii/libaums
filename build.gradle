@@ -3,9 +3,7 @@
 buildscript {
     repositories {
         jcenter()
-        maven {
-            url 'https://dl.bintray.com/magnusja/maven'
-        }
+     
         maven {
             url 'https://maven.google.com/'
             name 'Google'
@@ -26,34 +24,10 @@ buildscript {
     }
 }
 
-ext {
-    bintrayRepo = 'maven'
-
-    publishedGroupId = 'com.github.mjdev'
-    libraryName = 'libaums'
-
-    // artifact comes from module as well as libraryVersion
-    //artifact = 'libaums'
-
-    libraryDescription = 'Android USB mass storage library with FAT32 support.'
-
-    siteUrl = 'https://github.com/mjdev/libaums'
-    gitUrl = 'https://github.com/mjdev/libaums.git'
-
-
-    developerId = 'mjdev'
-    developerName = 'mjahnen'
-    developerEmail = 'jahnen@in.tum.de'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 allprojects {
     repositories {
         jcenter()
-        maven { url 'https://dl.bintray.com/magnusja/maven' }
+       
         maven {
             url 'https://maven.google.com/'
             name 'Google'
